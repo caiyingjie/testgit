@@ -32,7 +32,7 @@ class Food extends Model
 
     public static function queryBySearch($geohash, $keyword, $limit = 5)
     {
-        $ids = array();
+        $ids = array();33333
         $allRestaurant = Restaurant::queryByGeohash($geohash);
         $ids = $allRestaurant->lists('id');
         if (!$ids) {

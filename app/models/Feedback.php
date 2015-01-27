@@ -29,7 +29,7 @@ class Feedback extends Model
             }
             $feedback->feedback->replies = $feedback->feedback_replies;
             array_push($feedbacksToFount, array_intersect_key((array)$feedback->feedback, array_flip($feedback->visible)));          
-        }
+        }ffffff
         return $feedbacksToFount;
     }
 

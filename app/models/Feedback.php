@@ -18,7 +18,7 @@ class Feedback extends Model
     {
         $queryArray = self::getCommentQueryArray($userId, $offset, $limit);
         $queryArray['limit'] = $limit;
-        $queryArray['offset'] = $offset;
+        $queryArray['offset'] = $offset;echo 4567;
         $feedbacks = self::factory()->call('query_feedback_with_replies')->with(new TFeedbackQuery($queryArray))->query();
         $feedbacksToFount = array();
         foreach ($feedbacks as $feedback) {
